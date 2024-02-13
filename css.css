@@ -12,7 +12,7 @@ body {
 }
 .image-container {
     width: 100%;
-    height: 200px;
+    height: 250px;
     background: url('https://github.com/CarterBeauBenson/STIDS/blob/main/image/header.png?raw=true') no-repeat center center;
     background-size: cover;
     position: relative; 
