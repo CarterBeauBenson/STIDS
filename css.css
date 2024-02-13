@@ -13,7 +13,7 @@ body {
 .image-container {
     width: 100%;
     height: 200px;
-    background: url('https://github.com/johnbeve/JB-Fork-LLMO-FOIS/blob/main/images/1.png?raw=true') no-repeat center center;
+    background: url('https://github.com/CarterBeauBenson/STIDS/blob/main/image/header.png?raw=true') no-repeat center center;
     background-size: cover;
     position: relative; 
     z-index: 1; 
