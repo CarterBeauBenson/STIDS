@@ -4,7 +4,7 @@ body {
 }
 .header {
     text-align: center;
-    padding: 10px ;
+    padding: 10px;
     margin: 10px;
     z-index: 99;
     position: sticky;
@@ -14,17 +14,17 @@ body {
     width: 100%;
     height: 150px;
     background: url('https://github.com/CarterBeauBenson/STIDS/blob/main/image/header.png?raw=true') no-repeat center center;
-    background-size: contain; /* Updated this line */
+    background-size: contain;
     position: relative; 
     z-index: 1; 
 }
 .organizer img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-content {
     position: relative;
@@ -38,7 +38,6 @@ body {
 .navbar a {
     margin: 0 15px;
     padding: 20px;
-    
     text-decoration: none;
     color: #F8F8FF;
     font-size: 24px; 
@@ -48,7 +47,7 @@ p, ul {
     padding: 0 165px;
 }
 li {
-    padding: 0px ;
+    padding: 0px;
 }
 h1, h2 {
     text-align: center; 
@@ -59,5 +58,40 @@ h3 {
 }
 ul {
     list-style-type: square; 
-    list-style-position: inside ;
+    list-style-position: inside;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 20%; /* Adjust based on header height and desired position */
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: #f8f8ff;
+    padding: 10px;
+    z-index: 100; /* Ensure it's above other content */
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px; /* Space out links */
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Example specific styles for index page sidebar */
+#sidebar-index {
+    background-color: #f8f8ff; /* Same as shared style, but could be different */
+    /* Other specific styles for index sidebar */
+}
+
+/* Example specific styles for program page sidebar */
+#sidebar-program {
+    background-color: #e0e0e0; /* Different color for differentiation */
+    /* Other specific styles for program sidebar */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
