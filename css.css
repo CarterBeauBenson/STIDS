@@ -1,7 +1,9 @@
 body {
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
     font-family: 'Garamond', serif;
+    padding-bottom: 50px; /* Increased padding at the bottom */
 }
+
 .header {
     text-align: center;
     padding: 10px;
@@ -10,14 +12,16 @@ body {
     position: sticky;
     top: 0;
 }
+
 .image-container {
     width: 100%;
     height: 150px;
     background: url('https://github.com/CarterBeauBenson/STIDS/blob/main/image/header.png?raw=true') no-repeat center center;
     background-size: contain;
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
 }
+
 .organizer img {
     width: 200px;
     height: 200px;
@@ -26,70 +30,69 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .main-content {
     position: relative;
-    z-index: 2; 
-    background-color: #FFFFFF; 
+    z-index: 2;
+    background-color: #FFFFFF;
+    padding: 0 20px; /* Adjusted padding for content not to be covered by sidebar */
 }
+
 .navbar {
     text-align: center;
-    background-color: #008000; 
+    background-color: #008000;
 }
+
 .navbar a {
     margin: 0 15px;
     padding: 20px;
     text-decoration: none;
     color: #F8F8FF;
-    font-size: 24px; 
+    font-size: 24px;
 }
+
 p, ul {
-    font-size: 18px; 
-    padding: 0 165px;
+    font-size: 18px;
+    padding: 0 165px; /* Adjust if necessary to prevent sidebar overlap */
 }
+
 li {
     padding: 0px;
 }
+
 h1, h2 {
-    text-align: center; 
+    text-align: center;
 }
+
 h3 {
-    font-size: 18px; 
-    padding: 0 150px;   
+    font-size: 18px;
+    padding: 0 150px;
 }
+
 ul {
-    list-style-type: square; 
+    list-style-type: square;
     list-style-position: inside;
 }
 
-/* Sidebar styles */
+/* Sidebar adjustments */
 .sidebar {
     position: fixed;
-    top: 20%; /* Adjust based on header height and desired position */
+    top: 100px; /* Moved further down to not cover the header */
     left: 0;
-    width: 200px; /* Adjust width as needed */
+    width: 200px;
     background-color: #f8f8ff;
-    padding: 10px;
-    z-index: 100; /* Ensure it's above other content */
+    padding: 10px 10px 20px 10px; /* Added more padding at the bottom */
+    z-index: 100;
 }
 
 .sidebar a {
     display: block;
-    margin-bottom: 10px; /* Space out links */
-    color: #000; /* Text color */
-    text-decoration: none; /* Remove underline */
+    margin-bottom: 10px;
+    color: #000;
+    text-decoration: none;
 }
 
-/* Example specific styles for index page sidebar */
-#sidebar-index {
-    background-color: #f8f8ff; /* Same as shared style, but could be different */
-    /* Other specific styles for index sidebar */
-}
-
-/* Example specific styles for program page sidebar */
-#sidebar-program {
-    background-color: #e0e0e0; /* Different color for differentiation */
-    /* Other specific styles for program sidebar */
-}
+/* For visibility on the base page, ensure the sidebar HTML is included in your base page template. */
 
 /* Smooth scrolling */
 html {
